@@ -10,9 +10,3 @@
 	--Disciunt-Text: hsl(15, 100%, 70%);
 	--CTA-Text: hsl(226, 100%, 87%);
 }
-.App {
-	background-color: var(--Main-Background);
-	height: 50%;
-	width: 100%;
-	border: 1px solid yellow;
-}
