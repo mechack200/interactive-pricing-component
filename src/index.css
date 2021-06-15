@@ -1,3 +1,4 @@
+@import url(https://fonts.google.com/specimen/Manrope);
 :root {
 	--Pricing-Component-Background: hsl(0, 0%, 100%);
 	--Main-Background: hsl(230, 100%, 99%);
@@ -11,17 +12,13 @@
 	--CTA-Text: hsl(226, 100%, 87%);
 }
 
-* {
-	margin: 0;
-	padding: 0;
-}
 body {
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-		sans-serif;
+	padding: 5rem 1rem;
+	font-family: 'Manrope', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background-color: vvar(--Main-Background);
 }
 
 code {
