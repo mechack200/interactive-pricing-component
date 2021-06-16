@@ -10,18 +10,11 @@
 	--Disciunt-Text: hsl(15, 100%, 70%);
 	--CTA-Text: hsl(226, 100%, 87%);
 }
-.header_container {
+.pricing {
 	position: absolute;
+	border: 1px solid green;
 	width: 40%;
-	border: 1px solid indigo;
-	text-align: center;
-	padding: 1rem;
-	top: 4rem;
+	padding: 2rem;
+	top: 60%;
 	left: 30%;
-}
-.introductory_text h2 {
-	font-size: 30px;
-}
-.introductory_text p {
-	font-size: 15px;
 }
