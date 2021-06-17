@@ -1,0 +1,14 @@
+.charges {
+	/* border: 1px solid yellow; */
+	text-transform: uppercase;
+	text-align: left;
+}
+.charges h1 {
+	font-size: 25px;
+	font-weight: 400;
+	color: black;
+}
+.charges sup {
+	font-size: 15px;
+	color: var(--Dark-Desaturated-Blue);
+}

@@ -1,0 +1,6 @@
+.packages {
+	/* border: 1px solid purple; */
+	text-transform: uppercase;
+	color: var(--Grayish-Blue-Text);
+	margin-left: 1rem;
+}

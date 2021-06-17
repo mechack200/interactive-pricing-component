@@ -11,10 +11,34 @@
 	--CTA-Text: hsl(226, 100%, 87%);
 }
 .pricing {
+	display: grid;
+	grid-template-columns: 40% 15% 40%;
+	grid-template-rows: 40% 40% 40%;
+	grid-template-areas:
+		'packages packages charges'
+		'billing billing billing'
+		'rangeSlider rangeSlider rangeSlider';
 	position: absolute;
+	gap: 1rem;
 	border: 1px solid green;
-	width: 40%;
+	width: 50%;
 	padding: 2rem;
 	top: 60%;
-	left: 30%;
+	left: 25%;
 }
+.packages {
+	grid-area: packages;
+	/* background-color: red; */
+}
+.billing {
+	grid-area: billing;
+	/* background-color: blue; */
+}
+.charges {
+	grid-area: charges;
+	/* background-color: cadetblue; */
+}
+/* .rengeSlider {
+	grid-area: rangeSlider;
+	background-color: green;
+} */

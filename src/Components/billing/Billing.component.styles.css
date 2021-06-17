@@ -1,0 +1,50 @@
+.billing {
+	/* border: 1px solid purple; */
+	display: grid;
+	/* padding: 2rem; */
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50px;
+	grid-template-areas: 'monthly_billing yearly_billing';
+}
+.monthly_billing {
+	/* border: 1px solid yellow; */
+	grid-area: monthly_billing;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+}
+.monthly_billing button {
+	width: 20%;
+	height: 60%;
+	background-color: var(--Toggle-Background);
+	margin-left: 1rem;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.togglebtn {
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border-radius: 100%;
+}
+.yearly_billing {
+	/* border: 1px solid red; */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	grid-area: yearly_billing;
+	align-items: center;
+}
+.yearly_billing input {
+	width: 30%;
+	height: 50%;
+	margin-left: 1rem;
+	background-color: var(--Discount-Background);
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
