@@ -5,7 +5,7 @@ export const Charges = () => {
 	return (
 		<div className="charges">
 			<h1>
-				$16.00 <sup>/month</sup>
+				<b>$16.00</b> <sup>/month</sup>
 			</h1>
 		</div>
 	);

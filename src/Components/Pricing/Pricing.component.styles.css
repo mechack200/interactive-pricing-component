@@ -11,20 +11,25 @@
 	--CTA-Text: hsl(226, 100%, 87%);
 }
 .pricing {
+	height: 50%;
 	display: grid;
 	grid-template-columns: 40% 15% 40%;
-	grid-template-rows: 40% 40% 40%;
+	grid-template-rows: 20% 20% 20% 35%;
 	grid-template-areas:
 		'packages packages charges'
+		'testing testing testing'
 		'billing billing billing'
-		'rangeSlider rangeSlider rangeSlider';
+		'bottom-part bottom-part bottom-part';
 	position: absolute;
-	gap: 1rem;
-	border: 1px solid green;
+	margin: 0 auto;
+	gap: 0.5rem;
 	width: 50%;
 	padding: 2rem;
-	top: 60%;
+	background-color: var(--Pricing-Component-Background);
+	padding-bottom: 4rem;
+	top: 30%;
 	left: 25%;
+	box-shadow: 4px 2px 5px hsl(225, 20%, 60%);
 }
 .packages {
 	grid-area: packages;
@@ -38,7 +43,78 @@
 	grid-area: charges;
 	/* background-color: cadetblue; */
 }
-/* .rengeSlider {
-	grid-area: rangeSlider;
-	background-color: green;
-} */
+.slider {
+	grid-area: testing;
+	justify-content: center;
+	/* padding: 2rem; */
+}
+.bottom_part {
+	grid-area: bottom-part;
+	border-top: 2px solid grey;
+	display: flex;
+	justify-items: space-between;
+	flex-direction: row;
+	padding-top: 1.5rem;
+}
+.bottom_part .CTA_features {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	justify-items: centre;
+}
+.CTA_features p {
+	color: green;
+	font-size: 20px;
+	margin: 0.4rem;
+}
+.CTA_features span {
+	color: grey;
+	margin-left: 1rem;
+}
+.trial-container {
+	width: 50%;
+	height: 90%;
+}
+.trial-box {
+	width: 70%;
+	height: 1.5rem;
+	margin-top: 2.3rem;
+	padding: 0.5rem;
+	background-color: black;
+	text-align: center;
+	justify-content: center;
+	float: right;
+	margin-right: 1rem;
+	font-size: 20px;
+	color: white;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.trial-box p {
+	line-height: 1.5rem;
+	margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 500px) {
+	pricing {
+		height: 90%;
+		grid-template-columns: 40% 15% 40%;
+		grid-template-rows: 40% 40% 40% 45%;
+		grid-template-areas:
+			'packages packages packages'
+			'billing'
+			'testing'
+			'bottom-part bottom-part bottom-part';
+		position: absolute;
+		gap: 0.5rem;
+		width: 90%;
+		padding: 2rem;
+		background-color: var(--Pricing-Component-Background);
+		padding-bottom: 4rem;
+		top: 30%;
+		left: 25%;
+		box-shadow: 4px 2px 5px hsl(225, 20%, 60%);
+	}
+}

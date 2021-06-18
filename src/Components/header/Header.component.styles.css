@@ -13,7 +13,6 @@
 .header_container {
 	position: absolute;
 	width: 40%;
-	border: 1px solid indigo;
 	text-align: center;
 	padding: 1rem;
 	top: 4rem;
@@ -24,4 +23,15 @@
 }
 .introductory_text p {
 	font-size: 15px;
+}
+@media screen and (max-width: 500px) {
+	.header_container {
+		width: 90%;
+	}
+	.introductory_text h2 {
+		font-size: 15px;
+	}
+	.introductory_text p {
+		font-size: 15px;
+	}
 }
