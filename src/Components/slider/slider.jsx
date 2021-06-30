@@ -8,26 +8,6 @@ const createSliderWithTooltip = Slider.createSliderWithTooltip;
 const Range = createSliderWithTooltip(Slider.Range);
 
 export const SliderComponent = (props) => {
-	// const {onToggle, toggleBtn, sliderValues,onChangeSlider} = props
-	// // const [sliderValues, setSliderValue] = useState(props);
-	// const [value, setValue] = useState(props);
-
-	// useEffect(() => {
-	// 	setValue(props);
-	// }, [props]);
-
-	// const onSliderChange = (value) => {
-	// 	// countDigit(value);
-	// 	console.log(`${value.sliderValues}k`);
-	// 	setState({
-	// 		value,
-	// 	});
-	// countDigit(value);
-	// };
-	const onAfterChange = (value) => {
-		console.log(`${value}k`); //eslint-disable-line
-	};
-
 	return (
 		<div className="slider">
 			<div style={{ margin: 50 }}>
