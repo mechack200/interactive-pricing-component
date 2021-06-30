@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import './billing.component.styles.css';
 
 export const Billing = (props) => {
@@ -8,13 +7,13 @@ export const Billing = (props) => {
 		<div className="billing">
 			<div className="monthly_billing">
 				<p>Monthly Billing</p>
-				<button className= {onToggle ? 'btn changeColor' : 'btn'}  
-					onClick={() => {  
+				<button
+					className={!onToggle ? 'btn changeColor' : 'btn'}
+					onClick={() => {
 						toggleBtn();
-						
 					}}
 				>
-					<div className="togglebtn" style={{color:"red"}}>{onToggle}</div>
+					<div className="togglebtn"></div>
 				</button>
 			</div>
 			<div className="yearly_billing">

@@ -1,5 +1,4 @@
 .charges {
-	/* border: 1px solid yellow; */
 	text-transform: uppercase;
 	text-align: left;
 }
@@ -9,27 +8,20 @@
 	color: black;
 	margin-top: 4rem;
 	text-align: center;
-
-	
 }
 .charges sup {
 	font-size: 10px;
 	color: var(--Dark-Desaturated-Blue);
-	/* margin-right: 0.5rem; */
 }
-@media screen and (max-width:650px){
+@media screen and (max-width: 650px) {
 	.charges {
-		/* border: 1px solid yellow; */
 		text-align: center;
-		
 	}
 	.charges h1 {
 		font-size: 3rem;
 		font-weight: 400;
 		margin-top: 2rem;
 		text-align: center;
-	
-		
 	}
 	.charges sup {
 		font-size: 15px;

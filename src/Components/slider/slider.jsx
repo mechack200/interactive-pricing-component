@@ -46,6 +46,7 @@ export const SliderComponent = (props) => {
 						marginTop: -14,
 						backgroundColor: 'hsl(174, 86%, 45%)',
 						border: 0,
+						boxShadow: '4px 10px 5px #63d1c6',
 					}}
 					trackStyle={{
 						background: 'hsl(174, 86%, 45%)',
