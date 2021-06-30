@@ -10,21 +10,10 @@
 	--Disciunt-Text: hsl(15, 100%, 70%);
 	--CTA-Text: hsl(226, 100%, 87%);
 }
-.svg-container {
-	position: relative;
-	width: 100%;
+.svg-container{
+	background-color: var(--CTA-Text);
 }
-.curve-svg {
-	position: relative;
-	width: 100%;
-}
-.curve-svg svg {
-	width: 100%;
-}
+
 .ring-logo {
 	color: var(--Dark-Desaturated-Blue);
-	width: 30%;
-	position: absolute;
-	top: 3rem;
-	left: 45%;
 }

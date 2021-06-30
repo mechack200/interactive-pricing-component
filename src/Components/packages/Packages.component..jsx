@@ -1,10 +1,9 @@
-import React from 'react';
 import './Packages.component.styles.css';
-
-export const Packages = () => {
+// const value = 100;
+export const Packages = (props) => {
 	return (
-		<d className="packages">
-			<h4>100k packages</h4>
-		</d>
+		<div className="packages">
+		<b><h1>{props.customerPreview} packages</h1></b>
+		</div>
 	);
 };

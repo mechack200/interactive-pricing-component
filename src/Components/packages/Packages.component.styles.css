@@ -4,3 +4,23 @@
 	color: var(--Grayish-Blue-Text);
 	margin-left: 1rem;
 }
+.packages h1{
+	/* margin-top: 2.5rem; */
+	font-size: 25px;
+	font-weight: 400;
+	margin-top: 4rem;
+}
+@media screen and (max-width:650px){
+	.packages {
+		text-align: center;
+	}
+	.packages h1{
+		font-size: 1.5rem;
+		font-weight: 400;
+		margin-top: 2rem;
+		text-align: center;
+	}
+
+	
+}
+

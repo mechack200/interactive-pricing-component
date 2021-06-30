@@ -5,7 +5,9 @@
 	grid-template-columns: 50% 50%;
 	grid-template-rows: 50px;
 	grid-template-areas: 'monthly_billing yearly_billing';
+	
 }
+
 .monthly_billing {
 	/* border: 1px solid yellow; */
 	grid-area: monthly_billing;
@@ -14,21 +16,29 @@
 	align-items: center;
 	justify-content: flex-end;
 }
+.monthly_billing p{
+	width: 55%;
+	margin-left: 0.5rem;
+}
 .monthly_billing button {
-	width: 20%;
+	width: 35%;
 	height: 60%;
 	background-color: var(--Toggle-Background);
-	margin-left: 1rem;
+	margin-left: 0.2rem;
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
 }
 .togglebtn {
-	width: 20px;
-	height: 20px;
+	width: 40%;
+	height: 40%;
 	background-color: white;
 	border-radius: 100%;
+}
+.changeColor{
+	background-color:green ;
+
 }
 .yearly_billing {
 	/* border: 1px solid red; */
@@ -43,8 +53,43 @@
 	height: 50%;
 	margin-left: 1rem;
 	background-color: var(--Discount-Background);
-	border-top-right-radius: 20px;
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+@media screen and (max-width:650px) {
+
+	.monthly_billing p{
+		width: 75%;
+		margin-left: 0.5rem;
+	}
+	.monthly_billing button {
+		width: 25%;
+		height:45% ;
+		margin-left: 0;
+		
+	}
+
+	.yearly_billing p{
+		width: 70%;
+	}
+	yearly_billing input {
+		width: 30%;
+		height: 45%;
+		margin-left: 1rem;
+
+	}
+	
+
+	
+.yearly_billing p{
+	width: 65%;
+}
+.yearly_billing input {
+	width: 30%;
+	height: 50%;
+	margin-left: 0;
+	padding-right: 1rem;
+}
 }

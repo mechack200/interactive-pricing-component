@@ -11,10 +11,13 @@
 	--Disciunt-Text: hsl(15, 100%, 70%);
 	--CTA-Text: hsl(226, 100%, 87%);
 }
+* {
+	box-sizing: border-box;
+}
 
 body {
 	margin: 0;
-	padding: 2rem 1rem;
+	/* padding: 2rem 1rem; */
 	font-family: 'Manrope', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -24,9 +27,4 @@ body {
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 		monospace;
-}
-@media screen and (min-width: 375px) {
-	body {
-		padding: 0;
-	}
 }
